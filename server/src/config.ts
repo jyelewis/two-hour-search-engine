@@ -9,8 +9,8 @@ export const config = {
     /\.(pdf|jpg|jpeg|png|gif|exe|zip|dmg|mp3|mov)(\?.+)?$/
   ],
   indexBaseSoftBlacklist: [
-
+    /wikipedia\.org/
   ],
   softBlacklistRestore: 60, // how often to restore the soft blacklist to indexBaseSoftBlacklist (in seconds)
-  numberOfCrawlerThreads: 100
+  numberOfCrawlerThreads: 60
 };

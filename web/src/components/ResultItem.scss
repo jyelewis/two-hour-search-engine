@@ -1,0 +1,28 @@
+
+.component-ResultItem {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .url {
+    font-size: 12px;
+    color: #aaf;
+  }
+  .preview-text {
+    font-size: 12px;
+
+    em {
+      color: #faa;
+    }
+  }
+}

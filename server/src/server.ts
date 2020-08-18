@@ -1,6 +1,8 @@
 import {initElasticIndexes, search} from "./integration/elasticsearch";
 import * as express from "express";
 import {config} from "./config";
+import * as helmet from "helmet";
+import * as cors from "cors";
 
 async function bootstrapServer() {
   console.log("Hello world! for server");
@@ -10,6 +12,9 @@ async function bootstrapServer() {
 
   // start api server
   const app = express();
+
+  app.use(cors());
+  app.use(helmet());
 
   app.get('/search', (req, res) => {
     const searchText = req.query["q"];

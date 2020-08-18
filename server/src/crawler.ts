@@ -29,7 +29,7 @@ async function indexUrl(url: string): Promise<void> {
 
   for (const blacklistCheck of softBlacklist) {
     if (blacklistCheck.test(url)) {
-      console.log(`URL '${url}' soft blacklisted, deferring`);
+      // console.log(`URL '${url}' soft blacklisted, deferring`);
       markUrlPendingIndex(url); // re-queue this url for indexing
       return;
     }
