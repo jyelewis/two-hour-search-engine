@@ -1,0 +1,22 @@
+{
+  "name": "blank-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "server": "yarn build && node dist/server.js",
+    "crawler": "yarn build && node dist/crawler.js"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.8.0",
+    "@types/cheerio": "^0.22.21",
+    "@types/node": "^14.6.0",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "redis": "^3.0.2"
+  }
+}
